@@ -1,0 +1,15 @@
+%h1 New Entry
+
+= form_for(@entry) do |f|
+  .field
+    = f.label :title
+    = f.text_field :title
+
+  .field
+    = f.label :body
+    = f.text_area :body
+
+  .actions
+    = f.submit
+
+= link_to 'Back', entries_path
