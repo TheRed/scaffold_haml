@@ -8,8 +8,9 @@
       %th Title
       %th Body
       %th{ colspan: 3 }
-  - @entries.each do |entry|
-    %tbody
+
+  %tbody
+    - @entries.each do |entry|
       %tr
         %td= entry.title
         %td= entry.body
